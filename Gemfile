@@ -30,6 +30,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.1'
 # Adds AWS upload capbility
 gem 'aws-sdk-v1'
 gem 'dotenv-rails'
+gem 'aws-sdk', '~> 1.6'
 
 group :development do
   # Use pry over irb for rails console
