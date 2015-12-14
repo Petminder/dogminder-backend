@@ -25,7 +25,11 @@ gem 'active_model_serializers'
 gem 'birthday', '~> 0.3.0'
 
 # Adds image upload capability
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'paperclip', '~> 4.3', '>= 4.3.1'
+
+# Adds AWS upload capbility
+gem 'aws-sdk-v1'
+gem 'dotenv-rails'
 
 group :development do
   # Use pry over irb for rails console
