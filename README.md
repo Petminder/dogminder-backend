@@ -49,16 +49,15 @@ curl --header "Authorization: Token token=c017d611187e3350baffc52d35a4df69" http
 **OR**
 
 ```
-curl http://localhost:3000/books
+curl http://localhost:3000/pets
 ```
 
 ## Create
 
 ```
-curl --request POST --header "Authorization: Token token=be249dc0231396806f24c953cafae03a" --header "Content-Type: application/json" -d '{
-  "book": {
-    "title":"The Hold",
-    "isbn":"abc123def456"
+curl --request POST --header "Authorization: Token token=a3b6df7c46e27a6a880b276b0599dc59" --header "Content-Type: application/json" -d '{
+  "pet": {
+    "name":"Rupert",
   }
-}'  http://localhost:3000/books
+}'  http://localhost:3000/pets
 ```

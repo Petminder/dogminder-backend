@@ -13,7 +13,7 @@ class PetsController < ApplicationController
 
   # GET /pets/1
   def show
-    @pet = pet.find(params[:id])
+    @pet = Pet.find(params[:id])
 
     render json: @pet
   end
