@@ -2,9 +2,6 @@ class Pet < ActiveRecord::Base
   belongs_to :user
   has_many :documents
 
-  class Pet < ActiveRecord::Base
-  belongs_to :user
-
   has_attached_file :dog_pic,
         :styles => { :medium => "300x300>", :thumb => "100x100>" },
         :default_url => "/images/:style/missing.png"
@@ -19,5 +16,4 @@ class Pet < ActiveRecord::Base
 
   before_post_process :rename_dog_pic
 
-end
 end
