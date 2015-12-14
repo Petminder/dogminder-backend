@@ -1,4 +1,3 @@
-#
 module Authentication
   extend ActiveSupport::Concern
 
