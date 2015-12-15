@@ -32,6 +32,9 @@ gem 'aws-sdk-v1'
 gem 'dotenv-rails'
 gem 'aws-sdk', '~> 1.6'
 
+# Use handlebars
+gem 'handlebars', '~> 0.7.0'
+
 group :development do
   # Use pry over irb for rails console
   gem 'pry-rails'

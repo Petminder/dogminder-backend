@@ -3,7 +3,7 @@ class AuthController < ApplicationController
   skip_before_action :authenticate, only: [:login, :register]
 
   # POST /login
-  def login
+ def login
     @user = User.authenticate credentials[:email], credentials[:password]
     if @user
       render json: @user, serializer: LoginUserSerializer, root: 'user'
