@@ -20,10 +20,6 @@ class PetsController < OpenReadController
 
   # POST /pets
   def create
-    # if !pet_params.dog_pic
-    #   pet_params.dog_pic = "1450125166.png"
-    # end
-
     @pet = current_user.pets.new(pet_params)
     @pet.save
 
