@@ -40,3 +40,8 @@ group :development do
   gem 'pry-rails'
   gem 'byebug'
 end
+
+group :production do
+     gem 'rails_12factor'
+     gem 'puma'
+end
