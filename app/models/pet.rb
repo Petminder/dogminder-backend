@@ -4,7 +4,7 @@ class Pet < ActiveRecord::Base
 
   has_attached_file :dog_pic,
         :styles => { :medium => "300x300>", :thumb => "100x100>" },
-        :default_url => "/public/bailey.jpg",
+        :default_url => "app/assets/images/thumbs/bailey.jpg",
         :path => "/images/:id/:style/:filename"
   validates_attachment_content_type :dog_pic, :content_type => /\Aimage\/.*\Z/
 
