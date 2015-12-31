@@ -16,7 +16,6 @@ class Pet < ActiveRecord::Base
   end
 
   before_post_process :rename_dog_pic
-end
 
 has_attached_file :dog_doc,
       :path => "/documents/:id/:filename"
@@ -27,3 +26,5 @@ has_attached_file :dog_doc,
   end
 
   before_post_process :rename_dog_doc
+
+end
